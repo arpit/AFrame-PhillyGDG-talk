@@ -5,6 +5,8 @@
     <meta name="description" content="Interactions - A-Frame">
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://rawgit.com/ryanbetts/aframe-daydream-controller-component/master/dist/aframe-daydream-controller-component.min.js"></script>
+
   </head>
   <body>
     <a-scene>
@@ -34,6 +36,9 @@
       <a-sky id="bg" color="#fff"></a-sky>
 
       <a-plane src="#groundTexture" rotation="-90 0 0" width="50" height="50"></a-plane>
+      
+
+      <a-entity daydream-controller></a-entity>
 
       <a-camera>
         <a-cursor></a-cursor>
